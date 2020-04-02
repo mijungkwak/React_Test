@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, withRouter } from "react-router-dom";
 import { Nav, Navbar, NavItem } from "react-bootstrap";
+// 네비게이션바
 import { LinkContainer } from "react-router-bootstrap";
 import "./App.css";
 import Routes from "./Routes";
@@ -29,7 +30,7 @@ function App(props) {
     setIsAuthenticating(false);
   }
 
-  // 로그아웃 세션 지우기
+  // 로그아웃시 세션 지우기
   async function handleLogout() {
     await Auth.signOut();
   
